@@ -18,13 +18,16 @@
             Operacion operacion = new Operacion();
             String valor1 = request.getParameter("numero1");
             String valor2 = request.getParameter("numero2");
-            int num1 = Integer.parseInt(valor1);
-            int num2 = Integer.parseInt(valor2);
+            Double num1 = Double.parseDouble(valor1);
+            Double num2 = Double.parseDouble(valor2);
             if(request.getParameter("suma") != null){
                 out.println("<h1>SUMA</h1>" + operacion.suma(num1, num2));
             }
             if(request.getParameter("multiplicacion") != null){
                 out.println("<h1>MULTIPLICACION</h1>" + operacion.multiplicacion(num1, num2));
+            }
+            if(request.getParameter("num_mayor") != null){
+                out.println("<h1>NUMERO MAYOR DE LOS DOS</h1>" + operacion.numeroMayor(num1, num2));
             }
             //out.println(operacion.suma(num1, num2));
         %>
