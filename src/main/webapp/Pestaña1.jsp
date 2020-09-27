@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>CALCULADORA</h1>
-        <form method="GET" action="Operacion">
+        <form method="GET" action="Resultado.jsp">
             <label>INGRESA EL PRIMER NUMERO</label>
             <p><input type = "text" name = "numero1" size = "30"></p>
             <label>INGRESA EL SEGUNDO NUMERO</label>
@@ -22,11 +22,7 @@
             <input type="radio" name="suma" value="1">SUMA</p>
             <input type="radio" name="multiplicacion" value="1">MULTIPLICACION</p>
             <input type="radio" name="num_mayor" value="1">NUMERO MAYOR</p>
-            <input type ="submit" value = "CALCULAR"></p></p>
+            <input type ="submit" value = "CALCULAR"></p>
         </form>
     </body>
 </html>
-<% 
-    out.println("\n\n\n");
-    out.println("HOLA ESTA ES UNA ENTRADA");
-%>
